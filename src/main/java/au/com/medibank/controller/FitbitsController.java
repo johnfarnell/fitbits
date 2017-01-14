@@ -15,7 +15,7 @@ public class FitbitsController {
      */
     public void executeInstructions(FitbitsEntitiesDAO dao) {
         /*
-        Loop around each trainee and execute their instructions
+        Loop around each trainee and execute their instructions one at a time
          */
         Trainee trainee;
         while ((trainee = dao.getNextTrainee()) != null) {
